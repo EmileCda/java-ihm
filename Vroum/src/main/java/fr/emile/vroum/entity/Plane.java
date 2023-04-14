@@ -38,7 +38,6 @@ public class Plane extends Vehicle {
 	public void priceCalculate(int currentYear) {
 
 		float discount = this.calulcateYearDiscount(currentYear);
-		System.out.printf("discount %f", discount);
 
 		if (this.getEnginType().equals(EngineType.PROPELLER.toString())) { // type propeller
 
