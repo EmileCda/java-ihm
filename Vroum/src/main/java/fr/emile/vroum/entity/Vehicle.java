@@ -1,8 +1,5 @@
 package fr.emile.vroum.entity;
 
-import java.util.Calendar;
-import java.util.Date;
-import java.util.GregorianCalendar;
 
 //1. Définissez une classe Vehicule qui a pour attributs des informations valables pour tout type de
 //véhicule : sa marque, son année d'achat, son prix d'achat et son prix courant. 
@@ -12,7 +9,6 @@ public abstract class Vehicle {
 
 	// ---------------attribut ---------------------
 	private String brand; // sa marque,
-
 	private int yearOfPurchase; // son année d'achat
 	private float purchasePrice; // , son prix d'achat
 	private float currentPrice; // et son prix courant
@@ -54,7 +50,8 @@ public abstract class Vehicle {
 //	Définissez une méthode publique afficher() qui affiche la valeur des attributs.
 
 	public void display() {
-		System.out.println(this);
+		System.out.println(this.toString());
+
 
 	}
 
@@ -96,9 +93,12 @@ public abstract class Vehicle {
 	}
 
 	@Override
+
 	public String toString() {
-		return String.format("Vehicle %s %d P-price :%.2f C-price :%.2f", getBrand(), getYearOfPurchase(),
-				getPurchasePrice(), getCurrentPrice());
+		return String.format("Brand = %s, year Of Purchase = %d, currentPrice = %f\n",
+				this.getBrand(),this.getYearOfPurchase(),this.getCurrentPrice());
+		
 	}
 
+	
 }

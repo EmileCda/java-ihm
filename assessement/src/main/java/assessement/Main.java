@@ -8,7 +8,6 @@ import java.util.Map;
 public class Main {
 
 	public Main() {
-		// TODO Auto-generated constructor stub
 	}
 
 	public static int computeClosestToZero(int[] ts) {
@@ -220,7 +219,6 @@ public class Main {
 		
 	}
 		public static void testMain2(String[] args) {
-		// TODO Auto-generated method stub
 
 		String listMot[] = { "System", "printf", "mot1", "System", "printf", "stub", "System", "method", "stub", "mot1",
 				"STANDARD", "method", "mot1", "printf" };
@@ -235,7 +233,6 @@ public class Main {
 	
 
 	public static void testMain(String[] args) {
-		// TODO Auto-generated method stub
 
 		int temp[] = { 1, 2, 3, 6, -6, -6, -62, -16, -60 };
 		int temp2[] = { -276 };

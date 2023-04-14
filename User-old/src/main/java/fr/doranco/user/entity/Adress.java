@@ -7,7 +7,6 @@ public class Adress {
 	private String zipPostal;
 	
 	public Adress() {
-		// TODO Auto-generated constructor stub
 	}
 
 

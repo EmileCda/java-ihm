@@ -1,15 +1,14 @@
 package fr.emile.vroum.control;
 
 import fr.emile.vroum.entity.Car;
-import fr.emile.vroum.entity.EngineType;
 import fr.emile.vroum.entity.Plane;
 import fr.emile.vroum.entity.Vehicle;
-import fr.emile.vroum.entity.VehicleBrand;
+import fr.emile.vroum.enums.EngineType;
+import fr.emile.vroum.enums.VehicleBrand;
 
 public class VehicleControl {
 
 	public VehicleControl() {
-		// TODO Auto-generated constructor stub
 	}
 
 	public static void ZpriceCalculate(Vehicle myVehicle, int currentYear) {

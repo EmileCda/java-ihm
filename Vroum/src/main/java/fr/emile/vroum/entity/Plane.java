@@ -1,8 +1,7 @@
 package fr.emile.vroum.entity;
 
-import java.util.Calendar;
-import java.util.Date;
-import java.util.GregorianCalendar;
+
+import fr.emile.vroum.enums.EngineType;
 
 //Définissez deux classes Voiture et Avion, héritant de la classe Vehicule et ayant les attributs
 //supplémentaires suivants :
@@ -38,9 +37,8 @@ public class Plane extends Vehicle {
 	public void priceCalculate(int currentYear) {
 
 		float discount = this.calulcateYearDiscount(currentYear);
-		System.out.printf("discount %f", discount);
 
-		if (this.getEnginType().equals(EngineType.PROPELLER.toString())) { // type propeller
+		if (this.getEnginType().equals(EngineType.PROPELLER.getValue())) { // type propeller
 
 			discount += this.getFlightHour() / 1000f;
 		} else {
@@ -52,11 +50,6 @@ public class Plane extends Vehicle {
 
 	}
 
-	public void display() {
-
-		System.out.println(this);
-
-	}
 
 	// ----------- getter-Setter--------------------
 
@@ -84,22 +77,18 @@ public class Plane extends Vehicle {
 		this.power = power;
 	}
 
-	@Override
+	
 	public String toString() {
-		return String.format(
-				"----------%s Plane ------------\nBrand = %s,  year Of Purchase = %d, current Price : %.1f\nflight Hour : %d\n",
-				this.getEnginType(), this.getBrand(), this.getYearOfPurchase(), this.getCurrentPrice(),
-				this.getFlightHour());
+		
 
-//		return String.format("%s Plane %s---Brand = %s,    flight Hour : %d\n",
-//		String stringReturn = "" ;
-////		
-//		stringReturn+= String.format("%s Plane \nBrand = %s",	this.getEnginType(), this.getBrand());
-//		stringReturn+= String.format("%d",	this.getYearOfPurchase());
-//		stringReturn+= String.format("%f",	this.getCurrentPrice());
-//		stringReturn+= String.format("%d",	this.getFlightHour());
-//
-//		return stringReturn;
+		String stringReturn = String.format("----------%s airplane ------------\n",this.getEnginType());
+		
+		stringReturn += super.toString();
+		
+		stringReturn += String.format("flight Hour : %d\n",  this.getFlightHour());
+		
+		return stringReturn;
+
 
 	}
 

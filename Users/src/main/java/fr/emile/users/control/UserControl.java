@@ -15,7 +15,6 @@ public class UserControl {
 	public UserControl() {
 
 		UserControl.userList = new ArrayList<User>();
-		// TODO Auto-generated constructor stub
 	}
 
 	public static void add(User user) {

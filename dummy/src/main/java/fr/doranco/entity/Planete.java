@@ -13,7 +13,6 @@ public class Planete extends Celestial{
 	 * 
 	 */
 	public Planete() {
-		// TODO Auto-generated constructor stub
 	}
 
 }

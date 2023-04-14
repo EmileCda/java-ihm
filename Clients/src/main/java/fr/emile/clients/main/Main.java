@@ -6,7 +6,6 @@ import fr.emile.clients.entity.Client;
 public class Main {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
 		Client client1 = new Client("HUGO", "Victor", 1000.00f, 0.01f, 2000.00f, 0.02f);
 		Client client2 = new Client("CAMUS", "Albert", 3000.00f, 0.01f, 4000.00f, 0.02f);

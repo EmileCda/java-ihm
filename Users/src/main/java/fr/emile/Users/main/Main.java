@@ -10,7 +10,6 @@ import fr.emile.users.entity.User;
 public class Main {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		
 		User myUser = new User("emile","duboudin","emile@duboudin.com");
 		Address oneAddress = new Address("12", "Rue Lafayette", "Paris", "75001");

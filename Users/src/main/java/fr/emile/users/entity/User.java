@@ -14,7 +14,6 @@ public class User {
 	private Set<Address> addressList;
 
 	public User(String firstname, String lastname, String email, String password) {
-		// TODO Auto-generated constructor stub
 		this.setFirstname(firstname);
 		this.setLastname(lastname);
 		this.setEmail(email);
@@ -29,7 +28,6 @@ public class User {
 
 	public User() {
 		this("firstname-requiered", "lastname-requiered", "email-requiered", "password-requiered");
-		// TODO Auto-generated constructor stub
 	}
 
 	public String getFirstname() {

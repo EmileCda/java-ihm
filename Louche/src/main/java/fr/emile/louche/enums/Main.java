@@ -1,4 +1,4 @@
-package fr.emile.template.main;
+package fr.emile.louche.enums;
 
 public class Main {
 

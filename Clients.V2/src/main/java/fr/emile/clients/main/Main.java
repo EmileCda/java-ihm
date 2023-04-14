@@ -7,7 +7,6 @@ import fr.emile.clients.entity.Client;
 public class Main {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
 		Client client1 = new Client("HUGO", "Victor");
 		client1.addAccount(new Account((float)0.01,(float)1000, "Compte Principal" ));
