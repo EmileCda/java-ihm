@@ -1,6 +1,6 @@
-package fr.emile.fil.control;
+package fr.emile.template.events;
 
-import fr.emile.fil.entity.Pogo;
+import fr.emile.template.entity.Pogo;
 
 public class PogoControl {
 	
