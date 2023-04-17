@@ -16,7 +16,7 @@ public class SQuarePlate extends Plate {
 	//---------------processing methode ---------------------
 	@Override
 	public double calculateSurface() {
-		
+		System.out.printf(" calculateSurface plate %.2f",this.getDimension() * this.getDimension());
 		return this.getDimension() * this.getDimension();
 	}
 

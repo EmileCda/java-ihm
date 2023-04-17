@@ -20,8 +20,8 @@ public class RoundPlate extends Plate {
 
 	@Override
 	public double calculateSurface() {
-		
-		return  this.getDimension()*this.getDimension()*Math.PI /4;
+		System.out.printf(" calculateSurface ronde %.2f",this.getDimension()*this.getDimension()*Math.PI);
+		return  this.getDimension()*this.getDimension()*Math.PI ;
 	}
 
 	@Override
