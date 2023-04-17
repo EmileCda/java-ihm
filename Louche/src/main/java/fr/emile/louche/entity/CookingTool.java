@@ -2,7 +2,7 @@ package fr.emile.louche.entity;
 
 import java.util.Calendar;
 
-public class CookingTool {
+public abstract class CookingTool {
 
 	private float dimension;
 	private int dateFrom;
@@ -13,7 +13,6 @@ public class CookingTool {
 	 * @param dateFrom
 	 */
 	public CookingTool(float marketValue, int dateFrom) {
-		super();
 		this.setDimension(marketValue);
 		this.setDateFrom(dateFrom);
 	}

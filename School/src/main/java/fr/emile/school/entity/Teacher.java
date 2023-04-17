@@ -31,7 +31,7 @@ public class Teacher extends Staff {
 
 	@Override
 	public String toString() {
-		return String.format("%s Teacher %s",super.toString(), getSection());
+		return String.format("Teacher :\n%s\n\tTeaching section : %s",super.toString(), getSection());
 	}
 
 

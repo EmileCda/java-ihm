@@ -29,7 +29,7 @@ public class Staff extends Alien {
 
 	@Override
 	public String toString() {
-		return String.format("Staff %s lab=%s, %d€",super.toString(),  this.getLab(), this.getSalary());
+		return String.format("%s\tlab : %s\n\tsalary : %d€",super.toString(),  this.getLab(), this.getSalary());
 	}
 
 	//---------------attribut ---------------------

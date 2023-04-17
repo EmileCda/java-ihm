@@ -6,8 +6,8 @@ public abstract class Plate extends CookingTool {
 	public Plate(float marketValue, int dateFrom) {
 		super(marketValue, dateFrom);
 		// TODO Auto-generated constructor stub
-	}
 
+	}
 
 	//---------------attribut ---------------------
 
