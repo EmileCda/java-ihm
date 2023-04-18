@@ -2,7 +2,7 @@ package fr.emile.school.entity;
 
 
 public class Alien {
-
+	
 	private String name; 
 	private int year;
 
@@ -37,11 +37,12 @@ public class Alien {
 
 
 	@Override
-	public String toString() {
-		return String.format("\tName : %s\n\tYear : %d\n", getName(), getYear());
-		
-	}
 	
+	
+	public String toString() {
+		
+		return String.format("\tName : %s\n\tYear : %d\n", getName(), getYear());
+	}
 
 	//---------------attribut ---------------------
 

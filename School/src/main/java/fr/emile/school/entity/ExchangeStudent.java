@@ -28,17 +28,9 @@ public class ExchangeStudent extends Student {
 	@Override
 	public String toString() {
 		return String.format("Exchange Student:\n%s \torigin University : %s",
-						super.toString(), this.getOriginSchool());
-
-		
+						super.toString(), 
+						this.getOriginSchool());
+						
 	}
-
-	//---------------attribut ---------------------
-
-	//---------------conctructor ---------------------
-
-	//---------------processing methode ---------------------
-
-	//----------- getter-Setter--------------------
 
 }

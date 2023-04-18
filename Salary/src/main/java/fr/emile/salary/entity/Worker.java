@@ -1,8 +1,6 @@
-package fr.emile.chimical.entity;
+package fr.emile.salary.entity;
 
-
-public abstract class Worker{
-
+public abstract class Worker {
 	private String firstname;
 	private String lastname;
 	private int  age;
@@ -16,7 +14,7 @@ public abstract class Worker{
 	 */
 	public Worker(String firstname, String lastname, int age, String date) {
 		super();
-		this.setFirstname(firstname);
+		this.setFirstname( firstname);
 		this.setLastname(lastname);
 		this.setAge(age);
 		this.setDate(date);
@@ -25,11 +23,7 @@ public abstract class Worker{
 	
 	public abstract double calculateSalary() ;
 	
-	
-	
 	public String getFirstname() {
-		
-		this.firstname.s
 		return firstname;
 	}
 	public void setFirstname(String firstname) {
@@ -53,22 +47,13 @@ public abstract class Worker{
 	public void setDate(String date) {
 		this.date = date;
 	}
-
 	@Override
 	public String toString() {
 		return String.format(
 				"%s %s", 
 				getFirstname(), getLastname());
 	}
+
 	
 	
-	
-	//---------------attribut ---------------------
-
-	//---------------conctructor ---------------------
-
-	//---------------processing methode ---------------------
-
-	//----------- getter-Setter--------------------
-
 }

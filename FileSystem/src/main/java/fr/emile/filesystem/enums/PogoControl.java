@@ -1,6 +1,6 @@
-package fr.emile.template.enums;
+package fr.emile.filesystem.enums;
 
-import fr.emile.chimical.entity.Pogo;
+import fr.emile.filesystem.entity.Pogo;
 
 public class PogoControl {
 	

@@ -19,23 +19,15 @@ public class RegularStudent extends Student {
 	public double getPrope1() {
 		return this.prope1;
 	}
-
+	
 	public void setPrope1(double prope1) {
 		this.prope1 = prope1;
+		
 	}
-
-
+	
 	@Override
 	public String toString() {
 		return String.format("Regular Student:\n%s\tSection : %s\n \tPrope I: %s",super.toString(), this.getSection(),this.getPrope1());
 	}
-
-	//---------------attribut ---------------------
-
-	//---------------conctructor ---------------------
-
-	//---------------processing methode ---------------------
-
-	//----------- getter-Setter--------------------
 
 }

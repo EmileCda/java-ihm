@@ -75,17 +75,7 @@ public class Staff {
 	public void setMaxWorkerNumber(int maxWorkerNumber) {
 		this.maxWorkerNumber = maxWorkerNumber;
 	}
-	
-	
 
-	
 
-	//---------------attribut ---------------------
-
-	//---------------conctructor ---------------------
-
-	//---------------processing methode ---------------------
-
-	//----------- getter-Setter--------------------
 
 }

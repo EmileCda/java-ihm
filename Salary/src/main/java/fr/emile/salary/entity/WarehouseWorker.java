@@ -1,11 +1,8 @@
-package fr.emile.chimical.entity;
+package fr.emile.salary.entity;
 
 public class WarehouseWorker extends Worker {
-	
 	private int hourCount ;
 	
-	
-
 
 	//------------------------ constructor --------------
 	/**
@@ -20,19 +17,17 @@ public class WarehouseWorker extends Worker {
 		this.setHourCount(hourCount);
 	}
 
+
+
+
 	public int getHourCount() {
 		return hourCount;
 	}
 
+
 	public void setHourCount(int hourCount) {
 		this.hourCount = hourCount;
 	}
-
-	//---------------attribut ---------------------
-
-	//---------------conctructor ---------------------
-
-	//---------------processing methode ---------------------
 
 	@Override
 	public double calculateSalary() {
@@ -45,4 +40,5 @@ public class WarehouseWorker extends Worker {
 	public String toString() {
 		return String.format("the warehouse worker %s", super.toString());
 	}
+
 }
