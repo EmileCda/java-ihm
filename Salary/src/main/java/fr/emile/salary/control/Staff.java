@@ -119,7 +119,7 @@ public class Staff {
 			myWorkerList = entry.getValue();
 			double totalSalary = 0.0;
 			for (Worker worker : myWorkerList) {
-				System.out.printf("\t%s\n", worker.toString());
+				System.out.printf("\t%s Salary : %.2f\n", worker.toString(),worker.calculateSalary());
 				totalSalary += worker.calculateSalary() ;
 			}
 			System.out.printf(" average salary %.2f\n", totalSalary / myWorkerList.size());		

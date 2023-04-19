@@ -6,7 +6,6 @@ public class RiskyTechnician extends Technician implements IRisky {
 
 	public RiskyTechnician(String firstname, String lastname, int age, String date, int unit) {
 		super(firstname, lastname, age, date, unit);
-		// TODO Auto-generated constructor stub
 	}
 
 	//---------------attribut ---------------------
