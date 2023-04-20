@@ -1,29 +1,31 @@
 package fr.emile.dbase.main;
 
-import fr.emile.Dbase.utils.Dates;
+import java.util.List;
+
 import fr.emile.Dbase.utils.Utils;
 import fr.emile.dbase.entity.Address;
 import fr.emile.dbase.model.dao.AddressDao;
 import fr.emile.dbase.model.dao.IAddressDao;
 
-public class MainAddressInsert {
+public class MainAddressUpdate {
 
-	public MainAddressInsert() {
+	public MainAddressUpdate() {
 		// TODO Auto-generated constructor stub
 	}
 
 	public static void main(String[] args) {
+		
 		final IAddressDao myAddressDao = new AddressDao();
-		final int userId = 12 ;
-		Address myAddress = null; 
+		List<Address>  addressList = null;   
+		final int userId = 10 ;
 		try {
-			myAddress = new Address( "85","boulevard de la ruelle","grosactic","00190",userId);
-			myAddressDao.add(myAddress);
-			Utils.trace(myAddress.toString());
+			addressList = myAddressDao.get(userId);
+			Address firstAddress = addressList.get(0);
+			firstAddress.setCity("City-mod");
+			Utils.trace(firstAddress.toString());
+			myAddressDao.Update(firstAddress);
 		} catch (Exception e) {
 			e.printStackTrace();
-			System.out.printf("Error add %s", myAddress);
-			
 		}
 
 	}

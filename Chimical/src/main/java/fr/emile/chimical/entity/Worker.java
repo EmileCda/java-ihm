@@ -25,12 +25,11 @@ public abstract class Worker{
 	
 	public abstract double calculateSalary() ;
 	
-	
+
 	
 	public String getFirstname() {
 		
-		this.firstname.s
-		return firstname;
+		return this.firstname;
 	}
 	public void setFirstname(String firstname) {
 		this.firstname = firstname;

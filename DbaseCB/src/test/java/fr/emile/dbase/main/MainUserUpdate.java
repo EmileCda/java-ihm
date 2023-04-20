@@ -1,32 +1,27 @@
 package fr.emile.dbase.main;
 
+import fr.emile.Dbase.utils.Dates;
 import fr.emile.Dbase.utils.Utils;
 import fr.emile.dbase.entity.User;
 import fr.emile.dbase.model.dao.IUserDao;
 import fr.emile.dbase.model.dao.UserDao;
 
-public class MainUserInsert {
+public class MainUserUpdate {
 
-	public MainUserInsert() {
-		// TODO Auto-generated constructor stub
-	}
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		final IUserDao myUserDao = new UserDao();
-		int id = -1 ;
-		User myUser = null; 
 		try {
-			myUser = new User( "Zoerin", "grohli",Utils.string2Date("14071884","ddMMyyyy"));
-			id= myUserDao.add(myUser);
-			myUser.setId(id);
+			IUserDao userDao = new UserDao();
+			User user = userDao.get(10);
+			user.setFirstname("Papa");
+			user.setLastname("Noel");
+			user.setDateOfBirth(Dates.convertStringToDate("25/12/0001"));
+			Utils.trace(user.toString()	);
+//			userDao.Update(user);
+			userDao.Update(user);
+			Utils.trace("update ok");
 		} catch (Exception e) {
 			e.printStackTrace();
-			System.out.printf("Error add %s", myUser);
-			
-		}finally {
-			System.out.printf("%s", myUser);
-			
 		}
 	}
 

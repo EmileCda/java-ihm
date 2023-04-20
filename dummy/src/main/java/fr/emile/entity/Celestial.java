@@ -1,7 +1,7 @@
 /**
  * 
  */
-package fr.doranco.entity;
+package fr.emile.entity;
 
 /**
  * @author arfmazad
